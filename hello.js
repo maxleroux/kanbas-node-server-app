@@ -6,4 +6,4 @@ const Hello = (app) => {
       res.send('Welcome to Full Stack Development!')
     })
   }
-  export default Hello;
+export default Hello;

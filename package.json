@@ -2,7 +2,7 @@
   "type": "module",
   "name": "kanbas-node-server-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js HTTP web server for the Kanbas application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxleroux/kanbas-node-server-app.git"
+    "url": "git+https://github.com/aarohinadkarni/kanbas-node-server-app.git"
   },
-  "author": "Max Leroux",
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Aarohi Nadkarni",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maxleroux/kanbas-node-server-app/issues"
+    "url": "https://github.com/aarohinadkarni/kanbas-node-server-app/issues"
   },
-  "homepage": "https://github.com/maxleroux/kanbas-node-server-app#readme",
+  "homepage": "https://github.com/aarohinadkarni/kanbas-node-server-app#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",

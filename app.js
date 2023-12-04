@@ -38,5 +38,5 @@ Hello(app)
 CourseRoutes(app);
 app.listen(process.env.PORT || 4000);
 
-const CONNECTION_STRING = 'mongodb+srv://maxleroux:<password>@cluster0.4nfjdyt.mongodb.net/?retryWrites=true&w=majority' || 'mongodb://127.0.0.1:27017/kanbas'
+const CONNECTION_STRING = 'mongodb+srv://maxleroux:maxleroux@cluster0.4nfjdyt.mongodb.net/kanbas?retryWrites=true&w=majority' || 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect(CONNECTION_STRING);

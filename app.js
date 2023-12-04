@@ -9,12 +9,11 @@ import mongoose from "mongoose";
 import UserRoutes from "./users/routes.js";
 import session from "express-session";
 import "dotenv/config";
-mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
 
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL
+    origin: 'https://a6--verdant-hamster-afa3f7.netlify.app/'
 }));
 const sessionOptions = {
     secret: "any string",
@@ -38,3 +37,6 @@ Lab5(app)
 Hello(app)
 CourseRoutes(app);
 app.listen(process.env.PORT || 4000);
+
+const CONNECTION_STRING = 'mongodb+srv://maxleroux:<password>@cluster0.4nfjdyt.mongodb.net/?retryWrites=true&w=majority' || 'mongodb://127.0.0.1:27017/kanbas'
+mongoose.connect(CONNECTION_STRING);
